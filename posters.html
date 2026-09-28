@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,10 +21,16 @@
   <!-- =========================
        HEADER
   ========================== -->
+
   <header class="site-header">
+
     <div class="container nav-wrap">
 
-      <a class="brand" href="index.html" aria-label="CHI Lab Home">
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="CHI Lab Home"
+      >
 
         <img
           src="assets/CHI-Lab.png"
@@ -31,7 +38,10 @@
           loading="eager"
         >
 
-        <span class="brand-divider" aria-hidden="true"></span>
+        <span
+          class="brand-divider"
+          aria-hidden="true"
+        ></span>
 
         <img
           class="icri-logo"
@@ -41,6 +51,7 @@
         >
 
       </a>
+
 
       <button
         class="menu-toggle"
@@ -52,33 +63,65 @@
         ☰
       </button>
 
+
       <nav
         id="primary-nav"
         class="nav"
         aria-label="Primary navigation"
       >
-        <a href="index.html">Home</a>
-        <a href="symposium.html">Symposium</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a class="active" href="posters.html" aria-current="page">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="symposium.html">
+          Symposium
+        </a>
+
+        <a href="research.html">
+          Research
+        </a>
+
+        <a href="publications.html">
+          Publications
+        </a>
+
+        <a
+          class="active"
+          href="posters.html"
+          aria-current="page"
+        >
           Posters
         </a>
-        <a href="submit.html">Submit</a>
-        <a href="icri-ste.html">ICRI-STE</a>
+
+        <a href="submit.html">
+          Submit
+        </a>
+
+        <a href="icri-ste.html">
+          ICRI-STE
+        </a>
+
       </nav>
 
     </div>
+
   </header>
 
 
   <!-- =========================
        MAIN CONTENT
   ========================== -->
+
   <main>
 
-    <!-- Page Hero -->
+
+    <!-- =========================
+         PAGE HERO
+    ========================== -->
+
     <section class="page-hero">
+
       <div class="container">
 
         <span class="eyebrow">
@@ -86,7 +129,7 @@
         </span>
 
         <h1>
-          Posters
+          Scientific Posters
         </h1>
 
         <p>
@@ -95,38 +138,144 @@
         </p>
 
       </div>
+
     </section>
 
 
-    <!-- Poster Gallery -->
+    <!-- =========================
+         FEATURED POSTERS
+    ========================== -->
+
     <section class="section">
 
       <div class="container">
 
-        <div class="empty-state">
+        <div class="section-heading">
 
-          <div class="empty-mark" aria-hidden="true">
-            PS
-          </div>
+          <span class="eyebrow">
+            FEATURED RESEARCH
+          </span>
 
           <h2>
-            Poster Gallery Will Be Added Here
+            CHI Lab Poster Showcase
           </h2>
 
           <p>
-            Accepted posters can be displayed in this section with
-            a thumbnail, research title, authors, research area,
-            affiliation, and optional PDF or project link.
+            Explore selected scientific posters presented by
+            CHI Lab Scientists and Early Career Researchers.
           </p>
 
-          <a
-            class="btn primary"
-            href="https://forms.gle/R9ojCakYWnSoQzU99"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Submit a Poster ↗
-          </a>
+        </div>
+
+
+        <div class="cards two">
+
+
+          <!-- =========================
+               POSTER 01
+          ========================== -->
+
+          <article class="card poster-card">
+
+            <div class="poster-image">
+
+              <img
+                src="assets/poster-1.jpg"
+                alt="CHI Lab Scientific Poster 1"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="poster-content">
+
+              <span class="eyebrow">
+                POSTER 01
+              </span>
+
+              <h3>
+                Computational Healthcare Intelligence Research
+              </h3>
+
+              <p>
+                Scientific poster presenting research within the
+                Computational Healthcare Intelligence Lab, including
+                computational methods, artificial intelligence,
+                biomedical systems and healthcare research.
+              </p>
+
+
+              <div class="poster-actions">
+
+                <a
+                  class="btn primary"
+                  href="assets/poster-1.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Poster ↗
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- =========================
+               POSTER 02
+          ========================== -->
+
+          <article class="card poster-card">
+
+            <div class="poster-image">
+
+              <img
+                src="assets/poster-2.jpg"
+                alt="CHI Lab Scientific Poster 2"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="poster-content">
+
+              <span class="eyebrow">
+                POSTER 02
+              </span>
+
+              <h3>
+                Emerging Research in Computational Healthcare
+              </h3>
+
+              <p>
+                Scientific poster highlighting an emerging research
+                project, computational experiment, research prototype
+                or interdisciplinary contribution from the CHI Lab
+                scientific community.
+              </p>
+
+
+              <div class="poster-actions">
+
+                <a
+                  class="btn primary"
+                  href="assets/poster-2.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Poster ↗
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
 
         </div>
 
@@ -135,7 +284,10 @@
     </section>
 
 
-    <!-- Poster Information -->
+    <!-- =========================
+         POSTER INFORMATION
+    ========================== -->
+
     <section class="section alt">
 
       <div class="container">
@@ -151,8 +303,8 @@
           </h2>
 
           <p>
-            Each accepted poster may be presented using the following
-            research information.
+            Each accepted poster may be presented using the
+            following research information.
           </p>
 
         </div>
@@ -160,7 +312,7 @@
 
         <div class="cards three">
 
-          <!-- Card 1 -->
+
           <article class="card">
 
             <h3>
@@ -169,13 +321,12 @@
 
             <p>
               Concise title of the scientific contribution,
-              project, reproduction study, or research prototype.
+              project, reproduction study or research prototype.
             </p>
 
           </article>
 
 
-          <!-- Card 2 -->
           <article class="card">
 
             <h3>
@@ -183,14 +334,13 @@
             </h3>
 
             <p>
-              Author names, ECR level, research role, and
+              Author names, ECR level, research role and
               affiliations where appropriate.
             </p>
 
           </article>
 
 
-          <!-- Card 3 -->
           <article class="card">
 
             <h3>
@@ -200,10 +350,11 @@
             <p>
               AI, genomics, cancer research, biomedical systems,
               medical imaging, computational healthcare,
-              bioinformatics, or another relevant theme.
+              bioinformatics or another relevant theme.
             </p>
 
           </article>
+
 
         </div>
 
@@ -212,7 +363,10 @@
     </section>
 
 
-    <!-- Research Themes -->
+    <!-- =========================
+         RESEARCH THEMES
+    ========================== -->
+
     <section class="section">
 
       <div class="container">
@@ -229,8 +383,8 @@
 
           <p>
             Posters may highlight research, reproduction studies,
-            computational experiments, AI-driven prototypes,
-            and interdisciplinary healthcare research.
+            computational experiments, AI-driven prototypes and
+            interdisciplinary healthcare research.
           </p>
 
         </div>
@@ -238,64 +392,96 @@
 
         <div class="cards three">
 
+
           <article class="card">
-            <h3>Computational Oncology</h3>
+
+            <h3>
+              Computational Oncology
+            </h3>
+
             <p>
               Lung cancer, pancreatic cancer, precision oncology,
-              cancer genomics, biomarkers, and computational
+              cancer genomics, biomarkers and computational
               cancer research.
             </p>
+
           </article>
 
 
           <article class="card">
-            <h3>Artificial Intelligence</h3>
+
+            <h3>
+              Artificial Intelligence
+            </h3>
+
             <p>
               Machine learning, deep learning, transformers,
-              explainable AI, trustworthy AI, and AI-driven
+              explainable AI, trustworthy AI and AI-driven
               research systems.
             </p>
+
           </article>
 
 
           <article class="card">
-            <h3>Biomedical Intelligence</h3>
+
+            <h3>
+              Biomedical Intelligence
+            </h3>
+
             <p>
               Medical imaging, bioinformatics, systems biology,
-              multi-omics analysis, biomedical control systems,
+              multi-omics analysis, biomedical control systems
               and intelligent healthcare.
             </p>
+
           </article>
 
 
           <article class="card">
-            <h3>Reproducible Research</h3>
+
+            <h3>
+              Reproducible Research
+            </h3>
+
             <p>
               Research reproduction, open science, computational
-              workflows, benchmarking, validation, and transparent
+              workflows, benchmarking, validation and transparent
               scientific experimentation.
             </p>
+
           </article>
 
 
           <article class="card">
-            <h3>AI Agents & Virtual Labs</h3>
+
+            <h3>
+              AI Agents &amp; Virtual Labs
+            </h3>
+
             <p>
               Agentic AI, human-in-the-loop research, AI-assisted
-              scientific reasoning, privacy-preserving virtual labs,
+              scientific reasoning, privacy-preserving virtual labs
               and computational research automation.
             </p>
+
           </article>
 
 
           <article class="card">
-            <h3>Early Career Research</h3>
+
+            <h3>
+              Early Career Research
+            </h3>
+
             <p>
               ECR research projects, thesis work, research
-              reproductions, emerging ideas, and interdisciplinary
+              reproductions, emerging ideas and interdisciplinary
               scientific collaborations.
             </p>
+
           </article>
+
 
         </div>
 
@@ -304,7 +490,10 @@
     </section>
 
 
-    <!-- Submission CTA -->
+    <!-- =========================
+         CALL FOR POSTERS
+    ========================== -->
+
     <section class="section alt">
 
       <div class="container">
@@ -322,7 +511,7 @@
           <p>
             CHI Lab Scientists and Early Career Researchers are
             invited to contribute research posters to the
-            virtual symposium.
+            1st Virtual International Symposium.
           </p>
 
           <a
@@ -340,17 +529,21 @@
 
     </section>
 
+
   </main>
 
 
   <!-- =========================
        FOOTER
   ========================== -->
+
   <footer class="footer">
 
     <div class="container footer-grid">
 
+
       <!-- Footer Brand -->
+
       <div>
 
         <img
@@ -362,13 +555,14 @@
 
         <p>
           1st Virtual International Symposium of CHI Lab
-          Scientists & Early Career Researchers 2026
+          Scientists &amp; Early Career Researchers 2026
         </p>
 
       </div>
 
 
       <!-- Contribute -->
+
       <div>
 
         <h4>
@@ -391,6 +585,7 @@
 
 
       <!-- Organization -->
+
       <div>
 
         <h4>
@@ -411,6 +606,7 @@
 
       </div>
 
+
     </div>
 
 
@@ -424,7 +620,9 @@
   <!-- =========================
        JAVASCRIPT
   ========================== -->
+
   <script src="script.js"></script>
 
 </body>
 </html>
+```
