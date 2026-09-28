@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>console.log("CHI Lab Symposium Website Loaded"));
