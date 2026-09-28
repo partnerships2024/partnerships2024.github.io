@@ -1,1 +1,0 @@
-# partnerships2024.github.io
