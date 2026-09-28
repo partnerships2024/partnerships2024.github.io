@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <meta
     name="description"
@@ -11,22 +15,32 @@
 
   <title>Symposium | CHI Lab 2026</title>
 
-  <link rel="stylesheet" href="styles.css">
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  >
 </head>
 
 <body>
 
-<!-- ========================= HEADER ========================= -->
+<!-- =========================================================
+     HEADER
+========================================================= -->
 
 <header class="site-header">
 
   <div class="container nav-wrap">
 
-    <a class="brand" href="index.html">
+    <!-- BRAND -->
+    <a
+      class="brand"
+      href="index.html"
+      aria-label="CHI Lab Home"
+    >
 
       <img
         src="assets/CHI-Lab.png"
-        alt="CHI Lab logo"
+        alt="CHI Lab Logo"
       >
 
       <span class="brand-divider"></span>
@@ -34,21 +48,32 @@
       <img
         class="icri-logo"
         src="assets/ICRI-STE-Logo.png"
-        alt="ICRI-STE logo"
+        alt="ICRI-STE Logo"
       >
 
     </a>
 
+
+    <!-- MOBILE MENU -->
     <button
       class="menu-toggle"
+      type="button"
       aria-label="Open navigation"
+      aria-expanded="false"
     >
       ☰
     </button>
 
-    <nav class="nav">
 
-      <a href="index.html">Home</a>
+    <!-- NAVIGATION -->
+    <nav
+      class="nav"
+      aria-label="Main navigation"
+    >
+
+      <a href="index.html">
+        Home
+      </a>
 
       <a
         class="active"
@@ -57,7 +82,9 @@
         Symposium
       </a>
 
-      <a href="research.html">Research</a>
+      <a href="research.html">
+        Research
+      </a>
 
       <a href="publications.html">
         Publications
@@ -82,12 +109,16 @@
 </header>
 
 
-<!-- ========================= MAIN ========================= -->
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
 
 <main>
 
 
-  <!-- ========================= HERO ========================= -->
+  <!-- =======================================================
+       HERO
+  ======================================================== -->
 
   <section class="page-hero">
 
@@ -112,7 +143,10 @@
   </section>
 
 
-  <!-- ========================= PURPOSE ========================= -->
+
+  <!-- =======================================================
+       PURPOSE
+  ======================================================== -->
 
   <section class="section">
 
@@ -146,27 +180,40 @@
       </div>
 
 
+      <!-- INFORMATION PANEL -->
+
       <div class="info-panel">
 
         <div>
           <span>Format</span>
-          <strong>Virtual</strong>
+
+          <strong>
+            Virtual
+          </strong>
         </div>
+
 
         <div>
           <span>Year</span>
-          <strong>2026</strong>
+
+          <strong>
+            2026
+          </strong>
         </div>
+
 
         <div>
           <span>Community</span>
+
           <strong>
             CHI Lab Scientists &amp; ECRs
           </strong>
         </div>
 
+
         <div>
           <span>Organizer</span>
+
           <strong>
             Computational Healthcare Intelligence Lab
           </strong>
@@ -179,7 +226,10 @@
   </section>
 
 
-  <!-- ========================= PROGRAMME ========================= -->
+
+  <!-- =======================================================
+       PROGRAMME
+  ======================================================== -->
 
   <section class="section alt">
 
@@ -203,13 +253,18 @@
       </div>
 
 
+      <!-- TIMELINE -->
+
       <div class="timeline">
+
 
         <!-- 01 -->
 
         <div class="timeline-item">
 
-          <b>01</b>
+          <b>
+            01
+          </b>
 
           <div>
 
@@ -231,7 +286,9 @@
 
         <div class="timeline-item">
 
-          <b>02</b>
+          <b>
+            02
+          </b>
 
           <div>
 
@@ -253,7 +310,9 @@
 
         <div class="timeline-item">
 
-          <b>03</b>
+          <b>
+            03
+          </b>
 
           <div>
 
@@ -275,7 +334,9 @@
 
         <div class="timeline-item">
 
-          <b>04</b>
+          <b>
+            04
+          </b>
 
           <div>
 
@@ -299,7 +360,10 @@
   </section>
 
 
-  <!-- ========================= TWO POSTERS ========================= -->
+
+  <!-- =======================================================
+       SYMPOSIUM POSTERS
+  ======================================================== -->
 
   <section class="section">
 
@@ -324,23 +388,30 @@
       </div>
 
 
+      <!-- POSTER GRID -->
+
       <div class="cards two">
 
 
-        <!-- ================= POSTER 1 ================= -->
+        <!-- =================================================
+             POSTER 01
+        ================================================== -->
 
         <article class="card poster-card">
+
+          <!-- IMAGE -->
 
           <div class="poster-image">
 
             <img
               src="assets/poster-1.png"
               alt="CHI Lab Scientific Poster 1"
-              loading="lazy"
             >
 
           </div>
 
+
+          <!-- CONTENT -->
 
           <div class="poster-content">
 
@@ -360,13 +431,15 @@
             </p>
 
 
+            <!-- ACTION -->
+
             <div class="poster-actions">
 
               <a
                 class="btn primary"
                 href="assets/poster-1.png"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 View Poster ↗
               </a>
@@ -378,20 +451,26 @@
         </article>
 
 
-        <!-- ================= POSTER 2 ================= -->
+
+        <!-- =================================================
+             POSTER 02
+        ================================================== -->
 
         <article class="card poster-card">
+
+          <!-- IMAGE -->
 
           <div class="poster-image">
 
             <img
               src="assets/poster-2.png"
               alt="CHI Lab Scientific Poster 2"
-              loading="lazy"
             >
 
           </div>
 
+
+          <!-- CONTENT -->
 
           <div class="poster-content">
 
@@ -411,13 +490,15 @@
             </p>
 
 
+            <!-- ACTION -->
+
             <div class="poster-actions">
 
               <a
                 class="btn primary"
                 href="assets/poster-2.png"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 View Poster ↗
               </a>
@@ -436,7 +517,10 @@
   </section>
 
 
-  <!-- ========================= CONTRIBUTION ========================= -->
+
+  <!-- =======================================================
+       CONTRIBUTION / SUBMISSION
+  ======================================================== -->
 
   <section class="section">
 
@@ -470,18 +554,20 @@
 
   </section>
 
-
 </main>
 
 
-<!-- ========================= FOOTER ========================= -->
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
 <footer class="footer">
 
   <div class="container footer-grid">
 
 
-    <!-- Footer branding -->
+    <!-- FOOTER BRANDING -->
 
     <div>
 
@@ -499,7 +585,7 @@
     </div>
 
 
-    <!-- Explore -->
+    <!-- EXPLORE -->
 
     <div>
 
@@ -541,7 +627,7 @@
       <a
         href="https://icriste.com/"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
       >
         Official website ↗
       </a>
@@ -551,14 +637,56 @@
   </div>
 
 
+  <!-- COPYRIGHT -->
+
   <div class="copyright">
+
     © 2026 CHI Lab / ICRI-STE.
+
   </div>
 
 </footer>
 
 
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
 <script src="script.js"></script>
+
+
+<!-- =========================================================
+     MOBILE NAV FALLBACK
+========================================================= -->
+
+<script>
+
+  const menuToggle =
+    document.querySelector(".menu-toggle");
+
+  const nav =
+    document.querySelector(".nav");
+
+
+  if (menuToggle && nav) {
+
+    menuToggle.addEventListener("click", function () {
+
+      const isOpen =
+        nav.classList.toggle("open");
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        isOpen
+      );
+
+    });
+
+  }
+
+</script>
+
 
 </body>
 </html>
