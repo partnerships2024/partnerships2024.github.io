@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificate Verification | ICRI-STE | CHI Lab</title>
+<meta name="description" content="Official Certificate Verification Portal of the Computational Healthcare Intelligence Lab (CHI Lab), ICRI-STE.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Segoe UI,Arial,sans-serif;background:#f4f7fb;color:#172033;line-height:1.6}
+header{background:#0b1f3a;color:#fff;border-bottom:4px solid #1d78c1}
+.header{max-width:1150px;margin:auto;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{width:55px;height:55px;border:2px solid rgba(255,255,255,.8);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:800;letter-spacing:1px}
+.brand h2{font-size:18px}.brand p{font-size:12px;opacity:.82}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:14px}
+nav a:hover{text-decoration:underline}
+.hero{background:linear-gradient(135deg,#0b1f3a,#164e7a);color:#fff;text-align:center;padding:68px 20px 80px}
+.hero h1{font-size:clamp(30px,5vw,46px);margin-bottom:10px}.hero p{max-width:760px;margin:auto;opacity:.9}
+main{max-width:920px;margin:-40px auto 70px;padding:0 20px}
+.card{background:#fff;border-radius:16px;box-shadow:0 14px 38px rgba(15,35,60,.12);padding:38px}
+.card h2{text-align:center;color:#0b1f3a;margin-bottom:8px}.intro{text-align:center;color:#657084;font-size:14px;margin-bottom:28px}
+.search{display:flex;gap:12px}.search input{flex:1;padding:15px 17px;border:1px solid #ccd5e1;border-radius:9px;font-size:15px;outline:none}
+.search input:focus{border-color:#1d78c1;box-shadow:0 0 0 3px rgba(29,120,193,.12)}
+button{border:0;border-radius:9px;padding:0 25px;background:#0b5fa5;color:#fff;font-weight:700;cursor:pointer}
+button:hover{background:#084d87}
+.example{text-align:center;margin-top:12px;color:#7a8494;font-size:12px}.example code{background:#f0f3f7;padding:4px 7px;border-radius:4px}
+#result{display:none;margin-top:30px}
+.valid-head,.invalid-head{padding:18px 20px;border-radius:9px 9px 0 0;display:flex;gap:12px;align-items:center;font-weight:700}
+.valid-head{background:#eaf8f0;color:#176b3a;border:1px solid #b9e4ca}
+.invalid-head{background:#fff0f0;color:#a32929;border:1px solid #efc0c0}
+.icon{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:currentColor;color:#fff}
+.details{border:1px solid #dce2e9;border-top:0;border-radius:0 0 9px 9px}
+.row{display:grid;grid-template-columns:220px 1fr;padding:14px 20px;border-bottom:1px solid #edf0f3}
+.row:last-child{border-bottom:0}.label{font-weight:700;color:#586579}.value{color:#172033}.id{font-family:Consolas,monospace;font-weight:700;color:#0b5fa5}
+.note{margin-top:28px;padding:18px 20px;background:#f6f8fb;border-left:4px solid #1d78c1;border-radius:5px;font-size:13px;color:#586579}
+footer{background:#0b1f3a;color:rgba(255,255,255,.8);text-align:center;padding:35px 20px;font-size:13px}
+footer strong{color:#fff}
+@media(max-width:700px){.header{flex-direction:column;text-align:center}nav a{margin:0 7px}.search{flex-direction:column}.search button{min-height:48px}.row{grid-template-columns:1fr;gap:4px}.card{padding:25px 18px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="header">
+    <div class="brand">
+      <div class="logo">CHI</div>
+      <div>
+        <h2>Computational Healthcare Intelligence Lab</h2>
+        <p>International Council for Research &amp; Innovation in STE (ICRI-STE)</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="symposium.html">Symposium</a>
+      <a href="research.html">Research</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Certificate Verification</h1>
+  <p>Verify the authenticity and current status of certificates issued by the Computational Healthcare Intelligence (CHI) Lab, ICRI-STE.</p>
+</section>
+
+<main>
+  <section class="card">
+    <h2>Verify a Certificate</h2>
+    <p class="intro">Enter the Certificate ID exactly as shown on the certificate.</p>
+
+    <div class="search">
+      <input id="certificateId" type="text" placeholder="e.g. ICRI-STE/CHI/2026/0001" autocomplete="off">
+      <button onclick="verifyCertificate()">Verify Certificate</button>
+    </div>
+
+    <div class="example">Example: <code>ICRI-STE/CHI/2026/0001</code></div>
+    <div id="result"></div>
+
+    <div class="note">
+      <strong>Official Verification Notice</strong><br>
+      This portal provides online verification of certificates issued by the Computational Healthcare Intelligence (CHI) Lab, International Council for Research &amp; Innovation in STE (ICRI-STE). Only public verification fields are displayed.
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p><strong>Computational Healthcare Intelligence (CHI) Lab</strong></p>
+  <p>International Council for Research &amp; Innovation in STE (ICRI-STE)</p>
+  <p style="margin-top:10px;">&copy; 2026 ICRI-STE. All rights reserved.</p>
+  <p style="margin-top:8px;"><a href="index.html" style="color:white;text-decoration:none">Back to Portal</a></p>
+</footer>
+
+<script>
+let certificates = [];
+
+async function loadCertificates(){
+  try{
+    const response = await fetch("assets/certificates.json", {cache:"no-store"});
+    if(!response.ok) throw new Error("Register unavailable");
+    certificates = await response.json();
+
+    const id = new URLSearchParams(window.location.search).get("id");
+    if(id){
+      document.getElementById("certificateId").value = id;
+      verifyCertificate(false);
+    }
+  }catch(e){
+    showInvalid("The certificate verification register is temporarily unavailable.");
+  }
+}
+
+function verifyCertificate(updateUrl=true){
+  const entered = document.getElementById("certificateId").value.trim();
+  if(!entered){ showInvalid("Please enter a Certificate ID."); return; }
+
+  const certificate = certificates.find(c =>
+    String(c.certificate_id || "").trim().toLowerCase() === entered.toLowerCase()
+  );
+
+  if(!certificate){
+    if(updateUrl) history.replaceState(null,"","certificates.html");
+    showInvalid("No certificate record was found for the Certificate ID provided.");
+    return;
+  }
+
+  if(updateUrl){
+    history.replaceState(null,"","certificates.html?id="+encodeURIComponent(certificate.certificate_id));
+  }
+  showCertificate(certificate);
+}
+
+function showCertificate(c){
+  const result = document.getElementById("result");
+  result.style.display = "block";
+  result.innerHTML = `
+    <div class="valid-head">
+      <div class="icon">✓</div>
+      <div>Certificate Verified
+        <div style="font-size:12px;font-weight:400">This certificate record is valid in the official verification register.</div>
+      </div>
+    </div>
+    <div class="details">
+      ${row("Certificate ID", c.certificate_id, true)}
+      ${row("Certificate Holder", c.certificate_holder)}
+      ${row("Certificate Type", c.certificate_type)}
+      ${row("Programme / Event", c.programme_event)}
+      ${row("Issue Date", c.issue_date)}
+      ${row("Status", c.status)}
+    </div>`;
+}
+
+function row(label,value,isId=false){
+  return `<div class="row"><div class="label">${escapeHTML(label)}</div><div class="value ${isId?'id':''}">${escapeHTML(value)}</div></div>`;
+}
+
+function showInvalid(message){
+  const result=document.getElementById("result");
+  result.style.display="block";
+  result.innerHTML=`<div class="invalid-head"><div class="icon">!</div><div>Certificate Not Verified
+  <div style="font-size:12px;font-weight:400">${escapeHTML(message)}</div></div></div>`;
+}
+
+function escapeHTML(value){
+  return String(value ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;");
+}
+
+document.getElementById("certificateId").addEventListener("keydown",e=>{
+  if(e.key==="Enter") verifyCertificate();
+});
+
+loadCertificates();
+</script>
+</body>
+</html>
