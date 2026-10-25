@@ -6,53 +6,6 @@
   <meta name="description" content="1st Virtual International Symposium of CHI Lab Scientists & Early Career Researchers 2026">
   <title>CHI Lab Symposium 2026 | ICRI-STE</title>
   <link rel="stylesheet" href="styles.css">
-  
-  <!-- New styles added for the symposium image integration -->
-  <style>
-    /* Hero Image Styling */
-    .hero-img-container {
-      width: 100%;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-      border: 1px solid rgba(255,255,255,0.1);
-      transition: transform 0.3s ease;
-    }
-    .hero-img-container:hover {
-      transform: translateY(-5px);
-    }
-    .hero-img-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;
-    }
-
-    /* About Image Styling */
-    .about-img {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      display: block;
-      margin: 0 auto;
-    }
-
-    /* Make the "Split" section responsive with the new image */
-    .split-with-img {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-    }
-    .split-with-img > div {
-      flex: 1;
-    }
-    @media (max-width: 768px) {
-      .split-with-img {
-        flex-direction: column;
-      }
-    }
-  </style>
 </head>
 <body>
 <header class="site-header">
@@ -76,7 +29,6 @@
 </header>
 
 <main>
-  <!-- HERO SECTION: Replaced old orbit card with symposium.webp -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
@@ -93,17 +45,17 @@
           <div><strong>CHI Lab</strong><span>Scientific Community</span></div>
         </div>
       </div>
-      
-      <!-- INTEGRATED SYMPOSIUM IMAGE HERE -->
       <div class="hero-visual">
-        <div class="hero-img-container">
-          <img src="assets/symposium.webp" alt="1st Virtual International Symposium of CHI Lab Scientists">
+        <div class="logo-card">
+          <img src="assets/CHI-Lab.png" alt="Computational Healthcare Intelligence Lab">
+        </div>
+        <div class="orbit-card">
+          <span>AI</span><span>Genomics</span><span>Systems Biology</span><span>Biomedical AI</span><span>Digital Health</span><span>Research</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT SECTION: Added symposium image to the split layout -->
   <section class="section">
     <div class="container">
       <div class="section-heading">
@@ -111,34 +63,23 @@
         <h2>A research space for sharing, learning and collaboration</h2>
         <p>The symposium website provides a central place for researchers and ECRs to explore the event, research themes, scientific contributions, and submission routes.</p>
       </div>
-      
-      <!-- Split Layout with Image -->
-      <div class="split-with-img">
-        <div>
-          <div class="cards three" style="grid-template-columns: 1fr;"> <!-- Stacked cards to fit beside image -->
-            <article class="card">
-              <div class="icon">01</div>
-              <h3>Scientific Research</h3>
-              <p>Present computational and interdisciplinary work across healthcare, biomedical systems, AI, machine learning, data science and related research areas.</p>
-            </article>
-            <article class="card">
-              <div class="icon">02</div>
-              <h3>Early Career Researchers</h3>
-              <p>Highlight emerging researchers, research prototypes, reproducible experiments, literature-driven projects and collaborative scientific development.</p>
-            </article>
-            <article class="card">
-              <div class="icon">03</div>
-              <h3>International Collaboration</h3>
-              <p>Connect scientists and researchers through a virtual platform designed to support communication, knowledge exchange and future collaboration.</p>
-            </article>
-          </div>
-        </div>
-        <div>
-          <!-- Reusing symposium.webp here as a visual anchor -->
-          <img src="assets/symposium.webp" alt="Symposium Visual" class="about-img">
-        </div>
+      <div class="cards three">
+        <article class="card">
+          <div class="icon">01</div>
+          <h3>Scientific Research</h3>
+          <p>Present computational and interdisciplinary work across healthcare, biomedical systems, AI, machine learning, data science and related research areas.</p>
+        </article>
+        <article class="card">
+          <div class="icon">02</div>
+          <h3>Early Career Researchers</h3>
+          <p>Highlight emerging researchers, research prototypes, reproducible experiments, literature-driven projects and collaborative scientific development.</p>
+        </article>
+        <article class="card">
+          <div class="icon">03</div>
+          <h3>International Collaboration</h3>
+          <p>Connect scientists and researchers through a virtual platform designed to support communication, knowledge exchange and future collaboration.</p>
+        </article>
       </div>
-      
     </div>
   </section>
 
